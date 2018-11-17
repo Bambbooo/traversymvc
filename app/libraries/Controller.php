@@ -1,14 +1,19 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Bambo
- * Date: 2018. 11. 11.
- * Time: 20:21
  *
- * Every controller will extend this
+ * Base Controller
+ * Loads the models and views
  */
 
 class Controller
 {
+    // Load Model
+    public function model($model){
+        // Require model file
+        require_once '../app/models/' . $model . '.php';
 
+        // Instatiate model
+        // Like return new User;
+        return new $model;
+    }
 }
