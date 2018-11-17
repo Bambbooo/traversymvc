@@ -15,7 +15,7 @@ class Pages
 
     }
 
-    public function about($id){
-        echo $id;
+    public function about(){
+        echo "test";
     }
 }
