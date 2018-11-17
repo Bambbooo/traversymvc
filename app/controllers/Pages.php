@@ -16,6 +16,6 @@ class Pages
     }
 
     public function about(){
-        echo "test";
+        
     }
 }
