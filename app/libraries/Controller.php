@@ -14,6 +14,7 @@ class Controller
 
         // Instatiate model
         // Like return new User;
+        //test
         return new $model;
     }
 }
